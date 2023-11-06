@@ -4,6 +4,9 @@ local plugins = {
     opts = {
       ensure_installed = {
         "gopls",
+        "eslint-lsp",
+        "prettier",
+        "typescript-language-server"
       },
     },
   },
@@ -11,6 +14,20 @@ local plugins = {
     "mfussenegger/nvim-dap",
     init = function ()
       require("core.utils").load_mappings("dap")
+    end
+  },
+  {
+    "mhartington/formatter.nvim",
+    event = "VeryLazy",
+    opts = function ()
+      return require "custom.configs.formatter"
+    end
+  },
+  {
+    "mfussenegger/nvim-lint",
+    event = "VeryLazy",
+    config = function ()
+      require "custom.configs.lint"
     end
   },
   {
