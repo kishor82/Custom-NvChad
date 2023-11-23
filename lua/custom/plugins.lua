@@ -6,7 +6,9 @@ local plugins = {
         "gopls",
         "eslint-lsp",
         "prettier",
-        "typescript-language-server"
+        "typescript-language-server",
+        "html-lsp",
+        "protolint",
       },
     },
   },

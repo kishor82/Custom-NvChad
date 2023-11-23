@@ -43,5 +43,14 @@ lspconfig.tsserver.setup {
       description = "Organize Imports",
     }
   }
+}
 
+lspconfig.html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+lspconfig.protolint.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
