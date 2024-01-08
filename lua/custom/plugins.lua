@@ -1,4 +1,8 @@
 local plugins = {
+  -- {
+  --   "christoomey/vim-tmux-navigator",
+  --   lazy = false
+  -- },
   {
     "williamboman/mason.nvim",
     opts = {
@@ -8,7 +12,6 @@ local plugins = {
         "prettier",
         "typescript-language-server",
         "html-lsp",
-        "protolint",
       },
     },
   },
