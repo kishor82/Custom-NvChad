@@ -50,7 +50,3 @@ lspconfig.html.setup {
   capabilities = capabilities,
 }
 
-lspconfig.protolint.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
