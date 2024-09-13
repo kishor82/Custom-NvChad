@@ -13,13 +13,24 @@ return {
     end,
   },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc",
+       "html", "css", "go", "markdown",
+        "javascript", "json", "typescript",
+        "tsx", "yaml", "git_config", "nginx",
+        "sql", "ssh_config", "bash"
+  		},
+  	},
+  },
+
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    ft = "go",
+    opts = function ()
+      return require "configs.null-ls"
+    end,
+  },
 }
